@@ -10,5 +10,7 @@ mizzao:bootstrap-3
 accounts-ui
 accounts-password
 iron:router
+cfs:standard-packages
 cfs:filesystem
 underscore
+sacha:spin
