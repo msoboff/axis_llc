@@ -1,3 +1,5 @@
+
+//This validates that a user creates a user name based on the format firstname.middleinitial.lastname
 Accounts.validateNewUser(function(user) {
     var fields = user.username.split(".");
     if(user.username && fields.length == 3) {
