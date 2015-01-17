@@ -1,0 +1,9 @@
+<template name="login">
+    <div class="jumbotron">
+        <h2>Welcome to Axis. <br> To get started sign in below.</h2>
+        {{> loginButtons}}
+    </div>
+    {{#if currentUser}}
+        {{> userDashboard}}
+    {{/if}}
+</template>
