@@ -1,0 +1,66 @@
+<template name="admin">
+    <h2>Photo Id</h2>
+    <table class="table table-hover table-striped table-bordered">
+        <thead>
+        <th>Name</th>
+        <th>Owner</th>
+
+        <th>Download</th>
+        </thead>
+        <tbody>
+        {{#each uploads}}
+            <tr>
+                <td>{{name}}</td>
+                <td>{{owner}}</td>
+
+                <td>
+                    <a class="btn btn-primary" href="{{url download=true}}">Download</a>
+                </td>
+            </tr>
+        {{/each}}
+        </tbody>
+
+    </table>
+
+    <h2>Social Security</h2>
+    <table class="table table-hover table-striped table-bordered">
+        <thead>
+        <th>Name</th>
+        <th>Owner</th>
+        <th>Download</th>
+        </thead>
+        <tbody>
+        {{#each social}}
+            <tr>
+                <td>{{name}}</td>
+                <td>{{owner}}</td>
+                <td>
+                    <a class="btn btn-primary" href="{{url download=true}}">Download</a>
+                </td>
+            </tr>
+        {{/each}}
+        </tbody>
+
+    </table>
+
+    <h2>Hiring Packages</h2>
+    <table class="table table-hover table-striped table-bordered">
+        <thead>
+        <th>Name</th>
+        <th>Owner</th>
+        <th>Download</th>
+        </thead>
+        <tbody>
+        {{#each hPackage}}
+            <tr>
+                <td>{{name}}</td>
+                <td>{{owner}}</td>
+                <td>
+                    <a class="btn btn-primary" href="{{url download=true}}">Download</a>
+                </td>
+            </tr>
+        {{/each}}
+        </tbody>
+
+    </table>
+</template>
