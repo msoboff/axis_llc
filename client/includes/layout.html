@@ -2,8 +2,16 @@
     <div class="container">
         <header class="navbar navbar-default" role="navigation">
             <div class="navbar-header">
+                <span class="icon-bar"></span>
                 <a class="navbar-brand" href="{{pathFor 'login'}}">Axis</a>
             </div>
+            <ul class="nav navbar-nav">
+                {{#if isAdmin}}
+                <li>
+                    <a href="{{pathFor 'admin'}}">Admin Dashboard</a>
+                </li>
+                {{/if}}
+            </ul>
         </header>
 
         <div id="main" class="row-fluid">
